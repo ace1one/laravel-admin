@@ -28,7 +28,7 @@ Pass: secret
 
 ```
 
-## Demo Data
+## Installation
 If you want to test the application on your local machine with additional demo data you may use the following command.
 ```php
 
@@ -124,12 +124,10 @@ Several custom commands are available to add and update `role-permissions`. Plea
 
 # Features
 
-The `Laravel Starter` comes with several features which are the most common in almost all applications. It is a template project which means it is intended to be built in a way that it can be used for other projects.
+The `Laravel Starter Admin` comes with several features which are the most common in almost all applications. It is a template project which means it is intended to be built in a way that it can be used for other projects.
 
 It is a modular application, and some modules are installed by default. It will be helpful to use it as a base for future applications.
 
-* Admin feature and public views are completely separated as `Backend` and `Frontend` namespace.
-* Major features are developed as `Modules`. A module like Posts, Comments, and Tags are separated from the core features like User, Role, Permission
 
 
 ## Core Features
@@ -175,65 +173,13 @@ It is a modular application, and some modules are installed by default. It will 
   * Dashboard and details view
 
 
-# User Guide
-
-## Installation
-
-Follow the steps mentioned below to install and run the project. You may find more details about the installation in [Installation Wiki](https://github.com/nasirkhan/laravel-starter/wiki/Installation).
-
-1. Open the terminal and run the following command, this will download and install the `Laravel Starter` and run the post-installation commands. 
-```bash
-composer create-project nasirkhan/laravel-starter
-```
-2. The default database is `sqlite`, if you want to change please update the database settings at `.env` file
-3. To create a link from the storage directory, run the following command from the project root:
-```php
-php artisan storage:link
-```
-4. If you run the `create-project` command from `Laravel Hard` then the site will be available at [http://laravel-starter.test](http://laravel-starter.test). You may create a virtualhost entry to access the application or run `php artisan serve` from the project root and visit `http://127.0.0.1:8000`
-
-*After creating the new permissions use the following commands to update cashed permissions.*
-
-`php artisan cache:forget spatie.permission.cache`
-
-## Docker and Laravel Sail
-This project is configured with Laravel Sail (https://laravel.com/docs/sail). You can use all the docker functionalities here. To install using docker and sail:
-
-1. Clone or download the repository
-2. Go to the project directory and run `composer install`
-3. Create `.env` file by copying the `.env-sail`. You may use the command to do that `cp .env-sail .env`
-4. Update the database name and credentials in `.env` file
-5. Run the command `sail up` (consider adding this to your alias: `alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'`)
-6. Run the command `sail artisan migrate --seed`
-7. Link storage directory: `sail artisan storage:link`
-8. Since Sail is already up, you can just visit http://localhost:80
 
 
-# Screenshots
 
-__Home Page__
 
-![Laravel Starter Homepage Dark Mode](https://github.com/nasirkhan/laravel-starter/assets/396987/1cf5ce5a-f374-4bae-b5a3-69e8d7ff684d)
-![Laravel Starter Homepage](https://github.com/nasirkhan/laravel-starter/assets/396987/93341711-60dd-4624-8cd7-82f1c611287d)
 
-__Login Page__
 
-![Laravel Starter Login](https://user-images.githubusercontent.com/396987/164892620-3b4c8b1b-81c8-4630-a39f-38dadff89a7d.png)
 
-__Posts Page__
 
-![Laravel Starter Posts Page](https://github.com/nasirkhan/laravel-starter/assets/396987/288f56cb-0cb0-4652-be17-9f65288558bb)
 
-__Backend Dashboard__
-
-![Laravel Starter Admin Dashboard Dark Mode](https://github.com/nasirkhan/laravel-starter/assets/396987/0f6b8201-6f6a-429f-894b-4e491cc5eba4)
-![Laravel Starter Admin Dashboard](https://github.com/nasirkhan/laravel-starter/assets/396987/f8131011-2ecc-4a11-961f-85e02cb8f7a1)
-
----
-
-![Laravel Starter Posts List](https://github.com/nasirkhan/laravel-starter/assets/396987/c032769e-78b2-4dbf-bc5e-687645125796)
-
----
-
-![Edit-Posts-Laravel-Starter](https://github.com/nasirkhan/laravel-starter/assets/396987/6421b8e5-3c69-4c1f-9518-875e72be77c0)
 

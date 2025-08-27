@@ -16,10 +16,10 @@ $notifications_latest = optional($notifications)->take(5);
         </button>
         <ul class="header-nav d-none d-lg-flex">
             <li class="nav-item">
-                <a class="nav-link" href="{{ route("frontend.index") }}" target="_blank">
+                {{-- <a class="nav-link" href="{{ route("frontend.index") }}" target="_blank">
                     {{ app_name() }}&nbsp;
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
+                </a> --}}
             </li>
         </ul>
         <ul class="header-nav ms-auto">
@@ -220,7 +220,7 @@ $notifications_latest = optional($notifications)->take(5);
                 </ul>
             </li>
         </ul>
-        <ul class="header-nav">
+        {{-- <ul class="header-nav">
             <li class="nav-item dropdown">
                 <button
                     class="btn btn-link nav-link d-flex align-items-center px-2 py-2"
@@ -262,7 +262,7 @@ $notifications_latest = optional($notifications)->take(5);
                     @endforeach
                 </ul>
             </li>
-        </ul>
+        </ul> --}}
         <ul class="header-nav">
             <li class="nav-item dropdown">
                 <a

@@ -3,3 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 /* @import '/node_modules/@fortawesome/fontawesome-free/css/all.min.css'; */
+
+.border-login{
+    border:1px solid red !important;
+}
